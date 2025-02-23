@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>كلمة من القلب</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lalezar&family=Changa:wght@200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>اضغط على الزر لتحصل على جملة جديدة</h1>
+
+        <select id="categorySelect">
+            <option value="all">تصنيفات</option>
+            <option value="poetry">شعر</option>
+            <option value="ilike">عبارات أعجبتني</option>
+            <option value="all">عشوائي</option>
+        </select>
+
+        <button id="randomButton">عشوائي</button>
+
+        <p id="quoteDisplay"></p>
+
+        <div class="buttons-container">
+            <button id="copyButton">نسخ</button>
+            <button id="darkModeButton">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
