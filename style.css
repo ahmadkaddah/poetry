@@ -5,7 +5,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* خلفية ديناميكية */
 body::after {
   content: '';
   position: fixed;
@@ -48,6 +47,30 @@ body.dark-mode #darkModeButton i {
     color: #333;
 }
 
+#shareButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#shareButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+body.dark-mode #shareButton {
+  background-color: #007bff;
+}
+
+
+
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
@@ -75,6 +98,7 @@ body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
+
 
 body.dark-mode button {
     background-color: #ff6f61;
@@ -135,6 +159,9 @@ button:hover {
   font-family: 'Amiri', serif;
   font-size: 1.8rem;
   font-weight: 700;
+  white-space: pre-line;
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 #quoteDisplay.show {
@@ -195,5 +222,6 @@ body.dark-mode #categorySelect option {
 @media (max-width: 480px) {
   #quoteDisplay {
     font-size: calc(1.2rem + 1vw);
+    padding: 10px;
   }
 }
